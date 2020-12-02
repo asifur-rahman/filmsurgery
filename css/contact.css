@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+#main-container{
+    min-height: 100%;
+}
+#section{
+    overflow: auto;
+    padding-bottom: 200px;
+}
+#footer{
+    background-image: linear-gradient(-90deg,#f3c851,rgb(254, 95, 1));
+    position: relative;
+    margin-top: -100px;
+    clear: both;
+}
+.menu-bar{
+    background-image: linear-gradient(-90deg,#f3c851,rgb(254, 95, 1))
+}
+
+.nav-link{
+    font-size: 16px;
+    margin: 3px;
+    color: #fff!important;
+    font-weight: 500;
+}
+.navbar-nav{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.menu-bar .navbar-toggler{
+    padding-right: 20px;
+    outline: none!important;
+    border: none!important;
+}
+
+.navbar{
+    color: #fff;
+    font-size: 26px;
+}
+
+.nav-link:hover{
+    font-weight: 650;
+    border-bottom: 2px solid orangered;
+}
+
+.navbar-brand img{
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.banner{
+    padding: 0;
+    width: 100%;
+}
+
+/* Footer*/
+.footerbox{
+    display: flex;
+}
+.footerhead h6{
+    text-align: start;
+    padding-top: 1rem;
+    color:white;
+    font-weight: bold;
+}
+.servicelist{
+    display: flex;
+    justify-content: flex-start;
+}
+.servicelist ul li{
+    list-style: none;
+    color: white;
+    font-size: 12px;
+    line-height: 2rem;
+}
+.servicelist p{
+    color: white;
+    font-size: 12px;
+}
+.social-menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -56px;
+}
+.social-menu ul{
+    display: flex;
+}
+.social-menu ul li{
+    list-style: none;
+    padding-left: 10px;
+}
+.social-menu li .fa{
+    color: black;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    margin-top: 17px;
+    padding-top: 7px;
+}
+
+.copyright p {
+    color:white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px){
+    .nav-link:hover{
+        border-bottom: none!important;
+    }
+    .navbar-nav {
+        float: none;
+        text-align: center;
+    }
+    .navbar-nav li{
+        display: inline-block;
+        float: none;
+    }
+}
+
+@media (max-width:768px){
+    .footerbox{
+            display: flex;
+            flex-direction: column;
+        }
+        .social-menu{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        .navbar-brand img{
+            width: 80px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+    }
+}
